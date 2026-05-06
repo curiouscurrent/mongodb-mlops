@@ -56,3 +56,9 @@ Organisation -> Project -> Cluster -> Database -> Collection
 
 ## Logger and Exception Module Setup
 
+![alt text](images/image-3.png)
+
+Logged the exception
+
+![alt text](images/image-4.png)
+
