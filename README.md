@@ -22,6 +22,10 @@
     ```
 4. Do a "pip list" on terminal to make sure you have local packages installed. 
 5. Include -e . in requirements.txt to install all the local packages from src folder in your "vehicle" environment.
+6. Create a .env file and add the mongodb connection string.
+```
+CONNECTION_URL = <mongo-db_connection_string>
+```
 
 ## MongoDB Setup
 1. Sign up to MongoDB Atlas and create a new project by just providing it a name then next next create.
