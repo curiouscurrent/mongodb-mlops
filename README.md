@@ -53,3 +53,6 @@ Organisation -> Project -> Cluster -> Database -> Collection
 3. Data Successfully uploaded to MongoDB Atlas Database
 
 ![alt text](images/image-2.png)
+
+## Logger and Exception Module Setup
+
