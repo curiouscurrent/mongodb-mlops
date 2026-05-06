@@ -30,7 +30,7 @@
 4. Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
 5. Go back to project >> "Get Connection String" >> "Drivers" >> {Driver:Python, Version:3.12 or later} 
    >> copy and save the connection string with you(replace <db_password>). >> Done.
-6. Create folder "notebook" >> do step 11 >>  create file "mongoDB_demo.ipynb" >> select kernel>python kernel>vehicle>>
+6. Create folder "notebook" >> do step 7 >>  create file "mongoDB_demo.ipynb" >> select kernel>python kernel>vehicle>>
 7. Dataset added to notebook folder
 8. Push your data to mongoDB database from your python notebook. We have to upload data in mongodb in key value format. 
 9. Go to mongoDB Atlas >> Database >> browse collection >> see your data in key value format
