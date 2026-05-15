@@ -74,23 +74,23 @@ Logged the exception
 6. app.py / demo.py
 
 ### DATA-INGESTION
-        1. Before working on "Data Ingestion" component >> declare variables within constants.__init__.py file
-        2. Add code to configuration.mongo_db_connection.py file and define the class for mongodb connection.
-        3. Inside "data access" folder , add code to proj1_data.py that will use monogo_db_connection.py. It will create 
-        a connection and fetches the from there. 
-        4. To connect with database, fetch data in key-val format and transform that to a pandas dataframe. 
-        5. Add code to entity.config_entity.py file till DataIngestionConfig class. 
-        NOTE : Set MONGODB_URL on command prompt using 
-        ```
-        set VAR_NAME=VALUE
-        ```
-        To check if it is set ?
-        ```
-        echo %MONGODB_URL%
-        ```
-        **Data Ingestion output**
+1. Before working on "Data Ingestion" component >> declare variables within constants.__init__.py file
+2. Add code to configuration.mongo_db_connection.py file and define the class for mongodb connection.
+3. Inside "data access" folder , add code to proj1_data.py that will use monogo_db_connection.py. It will create 
+a connection and fetches the from there. 
+4. To connect with database, fetch data in key-val format and transform that to a pandas dataframe. 
+5. Add code to entity.config_entity.py file till DataIngestionConfig class. 
+NOTE : Set MONGODB_URL on command prompt using 
+```
+set VAR_NAME=VALUE
+```
+To check if it is set ?
+```
+echo %MONGODB_URL%
+```
+**Data Ingestion output**
 
-        ![alt text](images/image-5.png)
-        6. Add "artifact" directory to .gitignore file
+![alt text](images/image-5.png)
+6. Add "artifact" directory to .gitignore file
 
 
