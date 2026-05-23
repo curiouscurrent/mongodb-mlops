@@ -37,3 +37,9 @@ DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.25
 
 APP_HOST = "0.0.0.0"
 APP_PORT = 5000
+
+"""
+Data Validation related constants start with DATA_VALIDATION VAR NAME
+"""
+DATA_VALIDATION_DIR_NAME: str = "data_validation"
+DATA_VALIDATION_REPORT_FILE_NAME: str = "report.yaml"

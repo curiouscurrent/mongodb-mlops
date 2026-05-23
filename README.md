@@ -93,4 +93,7 @@ echo %MONGODB_URL%
 ![alt text](images/image-5.png)
 6. Add "artifact" directory to .gitignore file
 
+### Data Validation Output 
+![alt text](images/image-6.png)
+![alt text](images/image-7.png)
 
