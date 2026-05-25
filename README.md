@@ -100,3 +100,6 @@ echo %MONGODB_URL%
 ### Data Transformation Output
 ![alt text](images/image-8.png)
 
+### Model Training Output 
+![alt text](images/image-9.png)
+
