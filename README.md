@@ -93,6 +93,12 @@ echo %MONGODB_URL%
 ![alt text](images/image-5.png)
 6. Add "artifact" directory to .gitignore file
 
+# Data Validation, Transformation, Model Trainer.
+1. Complete the work on utils.main_utils.py and config.schema.yaml file (add entire info about dataset for data validation step)
+2. Now work on the "Data Validation" component the way we did in step 17 for Data Ingestion. (Workflow mentioned below)
+3. Now work on the "Data Transformation" component the way we did in above step. (add estimator.py to entity folder)
+4. Now work on the "Model Trainer" component the way we did in above step. (add class to estimator.py in entity folder)
+
 ### Data Validation Output 
 ![alt text](images/image-6.png)
 ![alt text](images/image-7.png)
@@ -102,4 +108,6 @@ echo %MONGODB_URL%
 
 ### Model Training Output 
 ![alt text](images/image-9.png)
+
+
 
