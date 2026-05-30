@@ -142,3 +142,17 @@ set AWS_SECRET_ACCESS_KEY=<secret_access_key_here>
 
 ### Model Evaluation Output 
 ![alt text](images/image-11.png)
+
+### Model Pusher Output 
+
+1. n_estimators : 20 , rest same, no model in production initially.
+![alt text](images/image-12.png)
+![alt text](images/image-13.png)
+
+2. n_estimators : 200, rest same, comparision happens now between the newly trained model and the 
+model already present in production
+![alt text](images/image-14.png)
+![alt text](images/image-15.png)
+
+newly trained model has f1 score higher than the model in production (i.e in s3 bucket), so the local newly trained
+model(the model inside the latest timestamp) is pushed to s3 bucket. 

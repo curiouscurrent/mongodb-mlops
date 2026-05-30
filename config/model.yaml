@@ -1,5 +1,5 @@
 model_trainer:
-  n_estimators: 20
+  n_estimators: 200
   min_samples_split: 7
   min_samples_leaf: 6
   max_depth: 10
