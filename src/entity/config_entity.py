@@ -57,3 +57,14 @@ class ModelTrainerConfig:
     _max_depth = model_path['model_trainer']['max_depth']
     _criterion = model_path['model_trainer']['criterion']
     _random_state = model_path['model_trainer']['random_state']
+
+@dataclass
+class ModelEvaluationConfig:
+    """
+    Push the new model only if the new trained model has 
+    f1 score more than the previous model's f1 score by a certain threshold amount.
+    """
+    changed_threshold_score: float = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+    bucket_name: str = MODEL_BUCKET_NAME
+    s3_model_key_path: str = MODEL_FILE_NAME
+

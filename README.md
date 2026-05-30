@@ -109,5 +109,36 @@ echo %MONGODB_URL%
 ### Model Training Output 
 ![alt text](images/image-9.png)
 
+# AWS SETUP 
+1. Login to AWS Console
+2. Keep region set as us-east-1
+3. Go to IAM -> Create new user (name it : firstproj)
+4. Attach policy - give administrator access to access all aws functionalities
+5. Go to user -> Security Credentials -> Access Keys -> Create access key
+6. Select usecase as CLI -> agree to condition -> next -> Create access key -> Download csv file
+7. Set env variables via CMD/Bash/Powershell
+```
+set AWS_ACCESS_KEY_ID=<access_key_here>
+set AWS_SECRET_ACCESS_KEY=<secret_access_key_here>
+```
+## IAM User created
+![alt text](images/image-10.png)
 
+8. Now add the access key, secret key, region name to constants.__init__.py
+9. Add code to src.configuration.aws_connection.py file (To work with AWS S3 service)
+10. Ensure below info in constants.__init__.py file:
+```
+            MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
+            MODEL_BUCKET_NAME = "<bucket_name_here>"
+            MODEL_PUSHER_S3_KEY = "model-registry"
+```
+11. Go to S3 service >> Create bucket >> Region: us-east-1 >> General purpose >>
+        Bucket Name: "<bucket_name_here>" >> uncheck: "Block all public access" and acknowledge >>
+        Hit Create Bucket
+12. Now inside "src.cloud_storage.aws_storage" code needs to be added for the configurations needed to pull 
+    and push model from AWS S3 bucket. 
+13. Inside src.entity dir we will have an "s3_estimator.py" file containing all the func to pull/push
+        data from s3 bucket.
 
+### Model Evaluation Output 
+![alt text](images/image-11.png)
